@@ -180,7 +180,7 @@ EOF
 
 mkdir -p ${STORAGE_TMP}
 
-TMPDIR=${STORAGE_TMP} pip3 install --no-cache-dir --no-deps -r /tmp/requirements_nodeps.txt
+TMPDIR=${STORAGE_TMP} pip3 install --no-cache-dir --no-deps -r /tmp/requirements_nodeps.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 # add zeroconf
 grep 'zeroconf' /tmp/requirements_nodeps.txt >> /tmp/owrt_constraints.txt
 # fix deps
